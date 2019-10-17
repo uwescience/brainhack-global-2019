@@ -1,4 +1,4 @@
-baseurl = "https://www.example.com/"
+# baseurl = ""
 languageCode = "en"
 title = "Brainhack Global 2019 / Seattle, USA"
 theme = "vex-hugo"
