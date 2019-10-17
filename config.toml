@@ -1,0 +1,74 @@
+baseurl = "https://www.example.com/"
+languageCode = "en"
+title = "Brainhack Global 2019 / Seattle, USA"
+theme = "vex-hugo"
+
+[params]
+  description = ""
+
+  # Put your custom stylesheets and scripts
+  custom_stylesheets = []
+  custom_scripts = []
+
+  # Additional meta
+  [[params.meta]]
+    name = ""
+    description = ""
+
+  # Navigation bar informations
+  [params.navbar]
+    logo = "Brainhack Global Neuropixels : November 13th & 14th, 2019"
+    [[params.navbar.menu]]
+      link = "#"
+      text = "Home"
+    [[params.navbar.menu]]
+      link = "http://www.brainhack.org/global2019/"
+      text = "BH Global"
+    [[params.navbar.menu]]
+      link = "#features"
+      text = "Features"
+    [[params.navbar.menu]]
+      link = "https://forms.gle/zy1H3V4qavMZfYAi7"
+      text = "Participate"
+
+  # Header
+  [params.header]
+    title = "Brainhack @ UW eScience Institute"
+    text = ''
+    [params.header.image]
+      path = "images/mouse_watching_spikes.png"
+      alt = "Neuropixels probe"
+      link = "https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels"
+    [params.header.button]
+      link = "https://forms.gle/zy1H3V4qavMZfYAi7"
+      text = "Sign up to participate"
+
+  [params.promo]
+    title = "What is a hackathon?"
+    text = "A participant-driven event focused on collaborative creative engagement. <br> An opportunity to explore new concepts, tools and ideas together. <br> A group effort to tackle and understand a new problem domain"
+
+  # Features
+  [params.features]
+    title = "Features"
+    [params.features.image]
+      path = "images/neuropixels_probe.png"
+      alt = "Neuropixels"
+    # Menu at the left of the image
+    [[params.features.left]]
+      icon = "tf-ion-ios-alarm-outline"
+      title = "Flexible schedule"
+      text = "Join us for all of, or some of, the event"
+    [[params.features.left]]
+      icon = "tf-ion-ios-bell-outline"
+      title = "Learn"
+      text = "Based on interest, tutorials will be provided about tools for analyzing neural data"
+    # Menu at the right of the image
+    [[params.features.right]]
+      icon = "tf-ion-ios-alarm-outline"
+      title = "A global community"
+      text = 'Coordinate with other Brainhack Global events. See [brainhack.org/global2019](https://brainhack.org/global2019) for details'
+    [[params.features.right]]
+      icon = "tf-ion-ios-bell-outline"
+      title = "Hack"
+      text = "Team up with other participants and come up with new findings and new tools for analysis"
+

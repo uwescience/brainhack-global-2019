@@ -1,0 +1,29 @@
+<!--
+Header start
+==================== -->
+{{- with .Site.Params.header }}
+<section class="hero-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-center">
+      {{- with .image }}
+        <img src="{{ relURL .path }}" alt="{{ .alt }}">
+      {{- end }}
+      </div>
+      <div class="col-md-6">
+        <div class="block">
+          <h1 class="">{{ .title }}</h1>
+          <p></p>
+          <p><strong>What? </strong>A hackathon focused on the <a href="https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels">Allen Institute for Brain Science Neuropixels dataset</a></p>
+          <p><strong>When? </strong> November 13th and 14th, 9 AM - 4 PM</p>
+          <p><strong>Where? </strong> The eScience <a href="https://escience.washington.edu/about-us/visit-us/">Data Science Studio</a>, <br>6th Floor Physics Astronomy Tower</p>
+
+        {{- with .button }}
+          <a class="btn btn-main" href="{{ .link }}" role="button">{{ .text }}</a>
+        {{- end }}
+        </div>
+      </div>
+    </div><!-- .row close -->
+  </div><!-- .container close -->
+</section><!-- header close -->
+{{- end }}

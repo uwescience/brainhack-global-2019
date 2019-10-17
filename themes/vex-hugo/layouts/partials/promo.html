@@ -1,0 +1,14 @@
+{{ with .Site.Params.promo }}
+<section class="promo-details section" id="promo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="content mt-100">
+          <h2 class="subheading">{{ .title }}</h2>
+          <h3>{{ .text | markdownify }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
